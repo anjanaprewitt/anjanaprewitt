@@ -124,11 +124,9 @@
 
  /* ===== Header logo ===== */
 .brand /* ===== Header logo ===== */
-.brand {
-  display: flex;
-  align-items: center;
-  font-weight: 750;
-  letter-spacing: .2px;
+.brand{
+  display:flex;
+  align-items:center;
 }
 
 .brand a{
@@ -137,38 +135,21 @@
 }
 
 .logo{
-  transform: scale(1.25);
-  transform-origin: left center;
-}
-
-.logo:hover {
-  opacity: 0.75;
-}
-
-/* Mobile: slightly smaller logo */
-@media (max-width: 600px){
-  .logo{ height: 44px !important; }
-}
-
-.brand a {
-  display: inline-flex;
-  align-items: center;
-}
-
-.logo {
   height: 72px;
   width: auto;
   display: block;
+  transform: scale(1.18);          /* compensates for padding inside the logo image */
+  transform-origin: left center;
 }
 
-.logo:hover {
+.logo:hover{
   opacity: 0.75;
 }
 
-/* Mobile: slightly smaller logo */
-@media (max-width: 600px) {
-  .logo {
-    height: 24px;
+@media (max-width: 600px){
+  .logo{
+    height: 48px;
+    transform: scale(1.12);
   }
 }
 
