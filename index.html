@@ -117,17 +117,22 @@
       .post{grid-column: span 12}
       .links{gap:10px}
     }
-    .logo {
-  height: 28px;
-  width: auto;
-  display: block;
-}
+ <style>
+  ...
+  @media (max-width: 900px){
+    ...
+  }
 
-.logo:hover {
-  opacity: 0.75;
-}
+  .logo {
+    height: 28px;
+    width: auto;
+    display: block;
+  }
 
-  </style>
+  .logo:hover {
+    opacity: 0.75;
+  }
+</style>
 </head>
 
 <body>
@@ -335,12 +340,11 @@
 
           <div class="hr"></div>
           <p class="small">
-            <p class="small">
-  Email: <a href="mailto:YOUR@email.com">anjdayal@gmail.com</a> •
-  LinkedIn: <a href="https://www.linkedin.com/in/anjanadayaldeprewitt/" target="_blank" rel="noopener">/in/YOURHANDLE</a>
+           <p class="small">
+  Email: <a href="mailto:anjdayal@gmail.com">anjdayal@gmail.com</a> •
+  LinkedIn: <a href="https://www.linkedin.com/in/anjanadayaldeprewitt/" target="_blank" rel="noopener">/in/anjanadayaldeprewitt</a>
 </p>
 
-          </p>
         </div>
 
         <div class="card" style="grid-column:auto">
@@ -437,34 +441,6 @@
     }
 
     loadPosts();
-
-    // --- Contact helper: copy message to clipboard ---
-    async function copyMessage() {
-      const name = document.getElementById("name").value.trim();
-      const email = document.getElementById("email").value.trim();
-      const msg = document.getElementById("msg").value.trim();
-
-      const template =
-`Hello Anjana,
-
-My name is ${name || "[Your Name]"} (${email || "[your email]"}).
-
-I'm reaching out about:
-${msg || "[Briefly describe what you’re working on, the audience/stakeholders, and what support you need]"}
-
-Timeline:
-[When are you hoping to start?]
-
-Best,
-${name || "[Your Name]"}`;
-
-      try {
-        await navigator.clipboard.writeText(template);
-        document.getElementById("formNote").textContent = "Copied to clipboard! Paste it into an email and send when ready.";
-      } catch {
-        document.getElementById("formNote").textContent = "Couldn’t copy automatically. Select the text below and copy it manually:\n\n" + template;
-      }
-    }
   </script>
 </body>
 </html>
