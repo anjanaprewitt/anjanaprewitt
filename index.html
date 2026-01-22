@@ -123,31 +123,47 @@
       .links{gap:10px}
     }
  <style>
-  ...
-  @media (max-width: 900px){
-    ...
-  }
+ /* ===== Header logo ===== */
+.brand {
+  display: flex;
+  align-items: center;
+}
 
+.brand a {
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo {
+  height: 28px;
+  width: auto;
+  display: block;
+}
+
+.logo:hover {
+  opacity: 0.75;
+}
+
+/* Mobile: slightly smaller logo */
+@media (max-width: 600px) {
   .logo {
-    height: 28px;
-    width: auto;
-    display: block;
+    height: 24px;
   }
+}
 
-  .logo:hover {
-    opacity: 0.75;
-  }
 </style>
 </head>
 
 <body>
   <div class="nav">
     <div class="wrap nav-inner">
-      <div class="brand">
+      <div lass="brand">
   <a href="#top" aria-label="Go to homepage">
-    <img src="Anjana_Wordmark_ADP.svg"
-         alt="Anjana Dayal de Prewitt"
-         class="logo">
+    <img
+      src="Anjana_Wordmark_ADP.svg"
+      alt="Anjana Dayal de Prewitt"
+      class="logo"
+    />
   </a>
 </div>
 
@@ -345,9 +361,10 @@
 
           <div class="hr"></div>
           <p class="small">
-           <p class="small">
   Email: <a href="mailto:anjdayal@gmail.com">anjdayal@gmail.com</a> •
-  LinkedIn: <a href="https://www.linkedin.com/in/anjanadayaldeprewitt/" target="_blank" rel="noopener">/in/anjanadayaldeprewitt</a>
+  LinkedIn: <a href="https://www.linkedin.com/in/anjanadayaldeprewitt/" target="_blank" rel="noopener">
+    /in/anjanadayaldeprewitt
+  </a>
 </p>
 
         </div>
