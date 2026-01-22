@@ -298,16 +298,20 @@
 
           <!-- This form is a placeholder (static sites can’t send email without a service).
                See note below for options like Formspree or Netlify Forms. -->
-          <form onsubmit="return false;">
-            <input id="name" placeholder="Your name" autocomplete="name" />
-            <input id="email" placeholder="Email" type="email" autocomplete="email" />
-            <textarea id="msg" placeholder="How can I help?"></textarea>
-            <button class="btn primary" type="button" onclick="copyMessage()">Prepare message</button>
-            <div class="small note" id="formNote">
-              Clicking “Prepare message” copies a formatted inquiry to your clipboard (you can paste it into email).
-              When you’re ready, I can help you connect a real form service.
-            </div>
-          </form>
+         <form action="https://formspree.io/f/https://formspree.io/f/xwvlejve" method="POST">
+  <input name="name" placeholder="Your name" required />
+  <input name="email" type="email" placeholder="Email" required />
+  <textarea name="message" placeholder="How can I help?" required></textarea>
+
+  <input type="hidden" name="_subject" value="New inquiry from website" />
+
+  <button class="btn primary" type="submit">Send</button>
+
+  <div class="small note">
+    Thank you for reaching out. I’ll respond as soon as I can.
+  </div>
+</form>
+
 
           <div class="hr"></div>
           <p class="small">
