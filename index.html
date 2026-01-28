@@ -4,12 +4,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Anjana Dayal de Prewitt | Humanitarian Leader, Facilitator & Writer</title>
- 
- <meta name="description" content="Humanitarian leader, facilitator, and writer with 25+ years across 30+ countries—bridging global strategy and local practice for humane, ethical impact." />
+
+  <meta name="description" content="Humanitarian leader, facilitator, and writer with 25+ years across 30+ countries—bridging global strategy and local practice for humane, ethical impact." />
   <meta name="robots" content="index,follow" />
   <meta property="og:title" content="Anjana Dayal de Prewitt" />
   <meta property="og:description" content="Bridging global strategy and local practice for humane, ethical impact." />
   <meta property="og:type" content="website" />
+
   <style>
     :root{
       --max: 1080px;
@@ -33,11 +34,11 @@
       border-bottom: 1px solid var(--line);
     }
     .nav-inner{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 18px;
-}
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:18px;
+    }
     .links{display:flex;align-items:center;gap:14px;flex-wrap:wrap;justify-content:flex-end;font-size:14px;color:var(--muted)}
     .btn{
       display:inline-flex;align-items:center;justify-content:center;gap:8px;
@@ -45,7 +46,8 @@
       font-weight:650;font-size:14px;white-space:nowrap;
     }
     .btn.primary{background:var(--ink);color:#fff}
-    .btn.ghost{border-color: #cbd5e1;color:var(--muted)}
+    .btn.ghost{border-color:#cbd5e1;color:var(--muted)}
+    .btn.text{border-color:#cbd5e1;color:var(--muted);cursor:default}
     .hero{padding:44px 0 18px}
     .kicker{
       display:inline-flex;align-items:center;gap:10px;
@@ -89,18 +91,6 @@
       box-shadow:var(--shadow);
     }
     .band p{margin:0;color:var(--muted);line-height:1.6;font-size:15px}
-    .posts{display:grid;grid-template-columns:repeat(12,1fr);gap:14px;margin-top:14px}
-    .post{
-      grid-column: span 6;
-      border:1px solid var(--line);
-      border-radius:var(--radius);
-      padding:14px;
-      background:#fff;
-      box-shadow:var(--shadow);
-    }
-    .post .meta{font-size:12px;color:var(--muted2);margin-bottom:6px}
-    .post .title{font-weight:750;line-height:1.25;margin:0 0 6px}
-    .post .excerpt{margin:0;color:var(--muted);line-height:1.55;font-size:14px}
     .small{font-size:12px;color:var(--muted2);line-height:1.5}
     .footer{padding:30px 0;color:var(--muted2);font-size:13px}
     .hr{height:1px;background:var(--line);margin:18px 0}
@@ -118,53 +108,47 @@
     @media (max-width: 900px){
       .card{grid-column: span 12}
       .two{grid-template-columns:1fr}
-      .post{grid-column: span 12}
       .links{gap:10px}
     }
 
- /* ===== Header logo ===== */
-.brand /* ===== Header logo ===== */
-.brand{
-  display:flex;
-  align-items:center;
-}
-
-.brand a{
-  display:inline-flex;
-  align-items:center;
-}
-
-.logo{
-  height: 72px;
-  width: auto;
-  display: block;
-  transform: scale(1.18);          /* compensates for padding inside the logo image */
-  transform-origin: left center;
-}
-
-.logo:hover{
-  opacity: 0.75;
-}
-
-@media (max-width: 600px){
-  .logo{
-    height: 48px;
-    transform: scale(1.12);
-  }
-}
-
-</style>
+    /* ===== Header logo ===== */
+    .brand{
+      display:flex;
+      align-items:center;
+    }
+    .brand a{
+      display:inline-flex;
+      align-items:center;
+    }
+    .logo{
+      height:72px;
+      width:auto;
+      display:block;
+      transform:scale(1.18);
+      transform-origin:left center;
+    }
+    .logo:hover{opacity:0.75}
+    @media (max-width: 600px){
+      .logo{
+        height:48px;
+        transform:scale(1.12);
+      }
+    }
+  </style>
 </head>
 
 <body>
   <div class="nav">
     <div class="wrap nav-inner">
       <div class="brand">
-  <a href="#top" aria-label="Go to homepage">
-    <img
-     src="Anjana_Wordmark_ADP.png" alt="Anjana Dayal de Prewitt" class="logo" />
-
-
+        <a href="#top" aria-label="Go to homepage">
+          <img
+            src="Anjana_Wordmark_ADP.png"
+            alt="Anjana Dayal de Prewitt"
+            class="logo"
+          />
+        </a>
+      </div>
 
       <div class="links">
         <a href="#work">Work</a>
@@ -186,9 +170,10 @@
         I’m a humanitarian leader, facilitator, and writer with over <strong>25 years of experience across more than 30 countries</strong>.
         I help mission-driven organizations translate values, policies, and business goals into <strong>inclusive, operational, human-centered outcomes</strong>—especially in complex environments.
       </p>
+
       <div class="cta">
         <a class="btn primary" href="#contact">Work with me</a>
-        <a class="btn ghost" href="#writing">Explore my writing</a>
+        <span class="btn ghost text" aria-label="Writing examples available upon request">Writing examples upon request</span>
         <a class="btn" href="https://anjana-prewitt.blogspot.com/" target="_blank" rel="noopener">Peace Calls archive</a>
       </div>
 
@@ -268,6 +253,7 @@
             <a class="btn primary" href="#contact">Speaking inquiry</a>
           </div>
         </div>
+
         <div class="card" style="grid-column:auto">
           <h3>Formats</h3>
           <p>Keynotes (in-person/virtual)</p>
@@ -275,192 +261,3 @@
           <p>Multi-session learning series</p>
           <p>Moderation / MC</p>
           <p class="small" style="margin-top:10px">Share your audience, theme, and what you want participants to feel/do afterward.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- WRITING -->
-    <section id="writing">
-      <h2>Writing</h2>
-      <p class="sub" style="font-size:16px">
-        My writing lives at the intersection of peace, justice, grief, and hope. Below are recent posts from <em>Peace Calls</em>.
-        For the full archive, visit the original blog.
-      </p>
-      <div class="cta">
-        <a class="btn" href="https://anjana-prewitt.blogspot.com/" target="_blank" rel="noopener">View full archive</a>
-      </div>
-
-      <div class="posts" id="posts">
-        <!-- Populated by JS. If feed can’t load, we show a graceful fallback. -->
-      </div>
-
-      <p class="small note" id="postsNote"></p>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about">
-      <h2>About</h2>
-      <div class="two">
-        <div>
-          <p class="sub" style="font-size:16px">
-            I’m Anjana Dayal de Prewitt—humanitarian leader, facilitator, and writer with <strong>25+ years across 30+ countries</strong>.
-            My journey began as local humanitarian staff in India, working close to communities and the realities of implementation.
-            Over time, my work expanded across regions and roles, eventually bringing me to Washington, DC—where I have spent the past 15 years engaging with global policy, institutional leadership, and systems change.
-          </p>
-          <p class="sub" style="font-size:16px;margin-top:12px">
-            This dual experience shapes how I work. I understand the logic of high-level frameworks, and I also understand the questions practitioners ask on the ground:
-            <em>Will this work here? What does this require of people? Who bears the cost of implementation?</em>
-            I help teams design guidance that is ethically grounded, operationally realistic, and human-centered.
-          </p>
-          <p class="sub" style="font-size:16px;margin-top:12px">
-            Alongside my humanitarian work, I am a <strong>published author and poet</strong>. Writing is central to how I make meaning—and it informs how I facilitate, advise, and speak.
-          </p>
-        </div>
-
-        <div class="band">
-          <p><strong>At a glance</strong></p>
-          <ul class="bullets" style="margin-top:8px">
-            <li>25+ years humanitarian & social change work</li>
-            <li>30+ countries</li>
-            <li>Bridges global strategy and local implementation</li>
-            <li>Community engagement through PSS, peacebuilding, equity & inclusion</li>
-            <li>Published author & poet</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact">
-      <h2>Contact</h2>
-      <div class="two">
-        <div>
-          <p class="sub" style="font-size:16px">
-            If you’re exploring facilitation, advisory support, speaking, or collaboration, share what you’re building—and where it feels most complex right now.
-          </p>
-
-          <!-- This form is a placeholder (static sites can’t send email without a service).
-               See note below for options like Formspree or Netlify Forms. -->
-       <form action="https://formspree.io/f/xwvlejve" method="POST">
-  <input name="name" placeholder="Your name" required />
-  <input name="email" type="email" placeholder="Email" required />
-  <textarea name="message" placeholder="How can I help?" required></textarea>
-
-  <input type="hidden" name="_subject" value="New inquiry from website" />
-
-  <button class="btn primary" type="submit">Send</button>
-
-  <div class="small note">
-    Thank you for reaching out. I’ll respond as soon as I can.
-  </div>
-</form>
-
-
-
-          <div class="hr"></div>
-          <p class="small">
-  Email: <a href="mailto:anjdayal@gmail.com">anjdayal@gmail.com</a> •
-  LinkedIn: <a href="https://www.linkedin.com/in/anjanadayaldeprewitt/" target="_blank" rel="noopener">
-    /in/anjanadayaldeprewitt
-  </a>
-</p>
-
-        </div>
-
-        <div class="card" style="grid-column:auto">
-          <h3>Quick links</h3>
-          <p><strong>Writing:</strong> <a href="https://anjana-prewitt.blogspot.com/" target="_blank" rel="noopener">Peace Calls</a></p>
-          <p><strong>Location:</strong> Washington, DC area (and global)</p>
-          <p class="small" style="margin-top:10px">
-            Want a custom domain later? GitHub Pages supports it.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <div class="footer">
-      © <span id="year"></span> Anjana Dayal de Prewitt • Built on GitHub Pages
-    </div>
-  </main>
-
-  <script>
-    // --- Basic helpers ---
-    document.getElementById("year").textContent = new Date().getFullYear();
-
-    function stripHtml(html) {
-      const tmp = document.createElement("div");
-      tmp.innerHTML = html || "";
-      return (tmp.textContent || tmp.innerText || "").replace(/\s+/g, " ").trim();
-    }
-
-    function formatDate(iso) {
-      try {
-        const d = new Date(iso);
-        return d.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
-      } catch { return ""; }
-    }
-
-    // --- Writing: try to load recent Blogger posts ---
-    // NOTE: Blogger feeds sometimes block browser fetch due to CORS.
-    // If it fails, we show a graceful fallback with a link to your archive.
-    const BLOG_URL = "https://anjana-prewitt.blogspot.com/";
-    const FEED_JSON = "https://anjana-prewitt.blogspot.com/feeds/posts/default?alt=json";
-
-    async function loadPosts() {
-      const postsEl = document.getElementById("posts");
-      const noteEl = document.getElementById("postsNote");
-
-      // Loading skeleton
-      postsEl.innerHTML = `
-        <div class="post"><div class="meta">Loading…</div><p class="title">Recent post</p><p class="excerpt">Fetching latest writing…</p></div>
-        <div class="post"><div class="meta">Loading…</div><p class="title">Recent post</p><p class="excerpt">Fetching latest writing…</p></div>
-      `;
-
-      try {
-        const res = await fetch(FEED_JSON, { mode: "cors" });
-        if (!res.ok) throw new Error("Feed request failed");
-        const data = await res.json();
-
-        const entries = (data && data.feed && data.feed.entry) ? data.feed.entry : [];
-        const items = entries.slice(0, 6).map(e => {
-          const title = e.title?.$t || "Untitled";
-          const published = e.published?.$t || "";
-          const content = e.content?.$t || e.summary?.$t || "";
-          const excerpt = stripHtml(content).slice(0, 180) + (stripHtml(content).length > 180 ? "…" : "");
-          const link = (e.link || []).find(l => l.rel === "alternate")?.href || BLOG_URL;
-          return { title, published, excerpt, link };
-        });
-
-        if (!items.length) throw new Error("No entries");
-
-        postsEl.innerHTML = items.map(p => `
-          <a class="post" href="${p.link}" target="_blank" rel="noopener">
-            <div class="meta">${formatDate(p.published)} • Peace Calls</div>
-            <p class="title">${p.title}</p>
-            <p class="excerpt">${p.excerpt}</p>
-          </a>
-        `).join("");
-
-        noteEl.textContent = "These links open the full posts on your Peace Calls blog.";
-      } catch (err) {
-        postsEl.innerHTML = `
-          <div class="post" style="grid-column: span 12;">
-            <div class="meta">Writing</div>
-            <p class="title">Read my latest reflections on Peace Calls</p>
-            <p class="excerpt">
-              Your browser may be blocking the blog feed from loading here (a common RSS/CORS limitation).
-              No problem—your writing is always available on the full archive.
-            </p>
-            <div style="margin-top:10px">
-              <a class="btn primary" href="${BLOG_URL}" target="_blank" rel="noopener">Open Peace Calls</a>
-            </div>
-          </div>
-        `;
-        noteEl.textContent = "";
-      }
-    }
-
-    loadPosts();
-  </script>
-</body>
-</html>
